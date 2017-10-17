@@ -21,7 +21,7 @@ setup(name='wsgierror',
           # -*- Extra requirements: -*-
       ],
       entry_points={
-          'paste.app_factory': [
+          'paste.filter_app_factory': [
               "main=wsgierror:Middleware"
           ]
       },
