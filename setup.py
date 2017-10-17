@@ -20,7 +20,9 @@ setup(name='wsgierror',
       install_requires=[
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points={
+          'paste.app_factory': [
+              "main=wsgierror:Middleware"
+          ]
+      },
       )
